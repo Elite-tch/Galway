@@ -92,7 +92,7 @@ export default function ContactPage() {
       </section>
 
       {/* 2. Main Contact Body Section */}
-      <section className="py-24 bg-brand-neutral-bg">
+      <section className="md:py-24 py-16 bg-brand-neutral-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">

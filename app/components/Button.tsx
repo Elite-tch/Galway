@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { businessConfig } from "@/config/businessConfig";
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 interface ButtonProps {
   children: React.ReactNode;
