@@ -105,7 +105,7 @@ export default function Navbar() {
               <motion.button
                 onClick={() => setIsOpen(!isOpen)}
                 whileTap={{ scale: 0.95 }}
-                className="p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors"
+                className="p-2.5 rounded-xl border-slate-100 text-slate-700 hover:bg-slate-200 transition-colors"
                 aria-label="Toggle Menu"
               >
                 {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
