@@ -32,8 +32,8 @@ export default function Home() {
 
   const stats = [
 
-    { value: "100%", label: "Sterile & Safe", icon: ShieldCheck },
-    { value: "5★★★★★", label: "Highly Rated", icon: Star },
+    { value: "100%", label: "Sterile & Safe" },
+    { value: "5★★★★★", label: "Highly Rated" },
   ];
 
   const galleryImages = [
@@ -126,13 +126,13 @@ export default function Home() {
                 variants={fadeInUp}
                 className="text-zinc-700 text-lg md:text-xl leading-relaxed font-medium"
               >
-                Welcome to <span className="font-semibold text-zinc-900">{businessConfig.businessName}</span>.
+                Welcome to <span className="font-bold text-[#670b10]">{businessConfig.businessName}</span>.
                 A creative tattoo design studio in the heart of Galway known for our professional atmosphere, top quality work, and friendly staff. Walk-ins welcome!
               </motion.p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
                 {stats.map((stat, idx) => {
-                  const StatIcon = stat.icon;
+
                   return (
                     <motion.div
                       key={stat.label}
@@ -142,7 +142,6 @@ export default function Home() {
                       transition={{ delay: idx * 0.1, duration: 0.5 }}
                       className="flex flex-col items-center justify-center text-center "
                     >
-                      <StatIcon className="w-5 h-5 text-brand-primary mb-2" />
                       <span className="text-xl md:text-2xl font-extrabold text-[#670b10]">{stat.value}</span>
                       <span className="text-zinc-500 font-semibold text-xs md:text-sm tracking-wide mt-1 uppercase">
                         {stat.label}
